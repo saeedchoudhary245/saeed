@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hacked by Choudhary</title>
+  <style>
+    body {
+      background-color: black;
+      color: lime;
+      font-family: monospace;
+      margin: 0;
+      overflow: hidden;
+    }
+    #warning {
+      position: fixed;
+      top: 30%;
+      width: 100%;
+      text-align: center;
+      font-size: 2rem;
+      color: red;
+      background-color: black;
+      z-index: 9999;
+      animation: blink 0.7s infinite;
+    }
+    @keyframes blink {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0; }
+    }
+    #terminal {
+      padding: 20px;
+      white-space: pre-wrap;
+    }
+    #clicker {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background: transparent;
+      border: none;
+      cursor: default;
+    }
+  </style>
+</head>
+<body>
+
+  <button id="clicker"></button> <!-- invisible click area -->
+
+  <div id="warning">⚠️ WARNING: Your Phone Has Been Hacked by SAEED CHOUDHARY ⚠️</div>
+  <div id="terminal"></div>
+
+  <script src="hacker.js"></script>
+</body>
+</html>
